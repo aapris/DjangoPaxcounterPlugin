@@ -1,0 +1,5 @@
+dist/
+django_paxcounter_plugin.egg-info/
+__pycache__
+.idea
+paxlog-*
