@@ -10,11 +10,13 @@ Quick start
 
 1. Create Python virtual environment, create installation package and install it:
     ```
-    # Create virtualenv first using python3.6 or newer
+    # Create virtualenv first using python3.6 or newer (in this directory)
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
     mv -v dist/ /tmp/  # Remove old installation package, if it exists
     python setup.py sdist
     pip install dist/django-paxcounter-plugin-0.1.tar.gz
-    pip install -r requirements.txt
     ```  
 
 1. Add "paxcounter" to your INSTALLED_APPS setting like this:
